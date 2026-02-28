@@ -125,28 +125,36 @@ button:nth-child(2):hover{
 .design .circle{
     aspect-ratio: 1;
     position: absolute;
-    border-radius: 50%;
+    /* border-radius: 50%;*/
     top: 50%;
     left: 70%;
     transform: translate(-50%,-50%);
 }
 .circle:nth-child(1){
     background: linear-gradient(90deg,transparent 50%,rgb(14, 2, 2) 50%);
-    width: 30.091rem;
+    width: 30.095rem;
+    height: 30.095rem;   
+    border-radius: 2rem;
 }
 .circle:nth-child(2){
     width: 29rem;
+    height: 29rem;
     background-image: url("image/IMG_20260214_194116.jpg.jpeg");
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
+    /*border: 0.4rem solid #b5b0b0; */
+    /* border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;  */
+    border-radius: 2rem;
     border: 0.4rem solid #b5b0b0;
+ 
     box-shadow: 
     0 0 3.7rem #f9a2a2,
     inset 0 0 2.9rem #efc9c9,
     0 0 2rem #210909,
     inset 0 0 2rem #210909,
-    0 0 4rem #7c5858,
-    inset 0 0 4rem #753f3f;
+     0 0 2.5rem #7c5858, 
+    inset 0 0 2.5rem #753f3f;  
 }
 .navlist li a::after, .navlist .active::after{
     content: "";
@@ -166,11 +174,15 @@ button:nth-child(2):hover{
 }
 /* contact*/
 
+body{
+    margin:0;
+     overflow:hidden;
+
 .contact-container{
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+
     background: linear-gradient(135deg, #280404, #5b3030, #a67f7f);
 }
 
@@ -180,26 +192,70 @@ button:nth-child(2):hover{
 
 .contact-content h1{
     font-size: 3rem;
-    margin-bottom: 1.5rem;
-    margin-top: 8rem;
-     color: rgb(243, 198, 198);
+    margin-bottom: 0.5rem;
+    margin-top: 8rem;      
+    color: rgb(243, 198, 198);
 }
 
 .contact-info{
     font-size: 1.2rem;
-    margin-bottom: 0.5rem;
      color: white;
+     line-height: 1.6;
+     margin-bottom: 0.4rem;
 }
 
 .contact-content .icons{
     display: flex;
     flex-direction: row;   
     justify-content: center;
-    align-items: center;
-    gap: 3;
-    margin-top: 0.05rem;
-    height:100vh;
+     align-items: center;
+   gap: 3rem;
+    margin-top: 0.01rem;
+    
 
 }
 
- 
+
+@media (max-width: 768px){
+
+.portfolio-container{
+    flex-direction: column;
+}
+
+.left-container,
+.right-container{
+    width: 100%;
+    height: auto;
+}
+
+.icons{
+    flex-direction: row;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.content{
+    margin-left: 1rem;
+    padding: 1rem;
+}
+
+.design .circle{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 2rem;
+}
+
+.circle:nth-child(1){
+    display:none;
+}
+
+.circle:nth-child(2){
+    width: 18rem;
+    height: 18rem;
+}
+
+.navlist{
+    gap: 1.5rem;
+}
+}   
