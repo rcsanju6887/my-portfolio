@@ -574,3 +574,87 @@ body::-webkit-scrollbar-thumb:hover{
     -webkit-text-fill-color:#fff1f1;
     transform: scale(1.2);
 }  
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width:768px){
+
+/* NAVBAR */
+
+.navlist{
+gap:1.5rem;
+font-size:14px;
+height:70px;
+}
+
+/* HOME SECTION */
+
+.home-content{
+flex-direction:column;
+text-align:center;
+padding:100px 20px;
+}
+
+.content{
+margin-left:0;
+}
+
+.content h1{
+margin-left:0;
+}
+
+/* ICONS */
+
+.icons{
+flex-direction:row;
+gap:20px;
+margin-bottom:20px;
+}
+
+/* PROFILE IMAGE */
+
+.profile-image img{
+width:220px;
+height:auto;
+margin-top:25px;
+}
+
+/* PROJECT PAGE */
+
+.projects-page{
+padding:100px 20px;
+}
+
+.project-card{
+flex-direction:column;
+align-items:flex-start;
+gap:10px;
+}
+
+/* SKILLS PAGE */
+
+.skills-page{
+padding:120px 20px 60px;
+}
+
+.skills-box{
+flex-wrap:wrap;
+}
+
+/* CONTACT PAGE */
+
+.contact-box{
+width:90%;
+}
+
+.contact-content h1{
+font-size:2.5rem;
+margin-top:6rem;
+}
+
+.contact-icons{
+gap:2rem;
+}
+
+}
