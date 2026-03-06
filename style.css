@@ -21,9 +21,9 @@ gap:3rem;
 justify-content:center;
 align-items:center;
 padding: 20px 0;
-background:linear-gradient(#150808,#683636,#601f1f);
+background:linear-gradient(30deg, #3c1a1a,#3a1c1c,#633939);
 width: 100%;
-height: 80px;
+height: 50px;
 z-index: 1000;
 position:fixed;
 top:0;
@@ -65,10 +65,10 @@ min-height:100vh;
 width:100%;
 background:linear-gradient(
 90deg,
-#160505 0%,
+#180a0a 0%,
 #5a3535 50%,
-#7b4040 75%,
-#744b4b 100%
+#824e4e 75%,
+#7c5353 100%
 );
 
 color:white;
@@ -77,15 +77,14 @@ color:white;
 /* LOGO */
 
 .logo{
-
 position:absolute;
-top:90px;
-left:15px;
+top:60px;
+left:12px;
 
-padding:10px 25px;
+padding:8px 30px;
 
 border:2px solid #210f0f;
-border-radius:30px;
+border-radius:15px;
 
 background:#755c5c;
 color:#210f0f;
@@ -227,20 +226,20 @@ inset 0 0 15px #efc9c9;
 /* Custom Scrollbar */
 
 body::-webkit-scrollbar{
-    width: 8px;
+    width: 10px;
 }
 
 body::-webkit-scrollbar-track{
-    background: #817f7f;
+    background: #574d4d;
 }
 
 body::-webkit-scrollbar-thumb{
-    background: #ffe2da;
+    background: #b9ada8;
     border-radius: 10px;
 }
 
 body::-webkit-scrollbar-thumb:hover{
-    background: #281510;
+    background: #452d28;
 }
 
 /*  HIRE buttom  */
@@ -318,7 +317,7 @@ body::-webkit-scrollbar-thumb:hover{
     padding: 12px;
     border-radius: 8px;
     border: 1px solid #421909;
-    background: #d7c5c5;   
+    background: #e3d8d8;   
     color: #2e0b0b;
     outline: none;
     font-size: 14px;
@@ -352,15 +351,15 @@ body::-webkit-scrollbar-thumb:hover{
 
 .projects-page{
     min-height: 100vh;
-    padding: 80px 100px;
-    background: linear-gradient(135deg, #331616, #5e4141,#3b1f1fa0);
+    padding: 50px 100px;
+    background: linear-gradient(135deg, #1f1212, #5e4141,#3b1f1fa0);
     color: white;
 }
 
 .projects-title{
    font-size: 3.2rem;
     margin-top: 100px;   
-    margin-bottom: 3px;
+    margin-bottom: 2.5px;
     font-weight: 500;
     text-align: center;
 }
@@ -461,7 +460,7 @@ body::-webkit-scrollbar-thumb:hover{
 
 .skills-container{
     min-height: 100vh;
-    background: linear-gradient(135deg,#5f3c3c, #8e5d5d,#835656);
+    background: linear-gradient(135deg,#754141, #755050,#523636);
     color: rgb(255, 240, 240);
     position: relative;
 }
